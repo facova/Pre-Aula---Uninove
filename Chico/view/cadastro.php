@@ -1,6 +1,6 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-<title>Chico Hamburguer - São Paulo Passa por aqui! - Carrinho</title>
+<title>Chico Hamburguer - Sï¿½o Paulo Passa por aqui! - Carrinho</title>
 
 <link href="css/screen.css" rel="stylesheet" type="text/css" />
 <link href="css/style.css" rel="stylesheet" type="text/css"  />
@@ -20,7 +20,7 @@ if (count($_POST) > 0) {
 	$ClienteControle->validacadastro();
 }
 ?>
-<!--
+
 <div id='conteudo' class='containerCentral'>
 <form action="cadastro.php" method="post" name="cadastro" target="_self">
     <div id='cad_esquerdo'>
@@ -71,23 +71,7 @@ if (count($_POST) > 0) {
     </div>
 </form>
 </div>
--->
-<div id="conteudo" class="containerCentral">
-<div id='produto'>
-    <div id='imgProd'><img href='../view/imagens/img_produtos/".$r[0].".jpg'></div>
-    <div id='dadosProduto'>
-    <div id='tituloProduto'>".$r[1]."</div>
-    <div id='descProduto'>".$r[2]."</div>
-    <div id='valorProduto'>R$ ".$r[3]."</div>
-    <div id='addBandeja'>
-    <form target='_self' action='categoria.php?id=".$cat."&act=add' method='post'>
-    Quantidade: <input type='text' name='prodQnt' value='1' maxlength='2' size='2'/>
-    <input type='hidden' name='prodCod' value='".$r[0]."' />
-    <input type='image' src='../view/imagens/adicionarbandeja.gif' name='submit' alt='Adicione à sua bandeja!' />
-    </form>
-    </div>
-    </div>
-</div>
+
 </div>
 <!-- Aqui vai o rodapÃ© pÃ¡gina -->
 <?php include('footer.php'); ?>
