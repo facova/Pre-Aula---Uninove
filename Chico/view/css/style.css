@@ -1,0 +1,232 @@
+@charset "utf-8";
+/* Documento CSS criado pelo Grupo de Pré Aula da sala 1211 - 5A - TADS*/
+
+/* Set de estilos gerais */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+	border: 0;
+	font-family: inherit;
+	font-size: 100%;
+	font-style: inherit;
+	font-weight: inherit;
+	margin: 0;
+	outline: 0;
+	padding: 0;
+	vertical-align: baseline;
+	font: Tahoma, Geneva, sans-serif;
+}
+
+body{
+	margin: 0;
+	background-color: #C8C8C8;
+}
+
+/* Set do Header */
+
+#clear{
+	height:15px;	
+}
+
+#header{
+	background-color: #3A405A;
+	width: 100%;
+	height: 160px;
+
+}
+
+#top{
+	width: 1040px;
+	height: 160px;
+	margin: auto;
+}
+
+#logo{
+	margin: 30px 0px 0px 30px;
+
+}
+
+/* Set do Menu */
+
+#menu{
+	background: url("../imagens/barra.jpg") no-repeat scroll 0 0 transparent;
+	background-color: #3A405A;
+	width: 820px;
+	height: 56px;
+	margin: -30 auto;
+	padding: 0px 0px 0px 30px;
+}
+
+#menu ul {
+    padding:0px;
+    margin:15px 0px 0px 0px;
+    float: left;
+    width: 100%;
+    list-style:none;
+
+	font-size:20px;
+	
+}
+
+#menu ul li { display: inline; }
+
+#menu ul li a {
+    padding: 0px 20px 0px 20px ;
+    float:left;
+    /* visual do link */
+	color:FFF;
+    text-decoration: none;
+}
+
+#menu ul li a:hover {
+    background-color:#FFF;
+    color: #6D6D6D;
+}
+
+
+#clear /* Responsável por arrumar a distância da próxima div*/{
+	width: 1040px;
+	height: 50px;
+	margin: auto;
+}
+
+/* ------------------------------- Conteúdo ---------------------------------*/
+
+.containerCentral /* Responsável por colocar as divs em 1024px e alinhar ao centro*/{
+	width: 1040px;
+	margin: auto;
+}
+
+/* ------------------------------- Conteúdo Home ---------------------------------*/
+
+#slider{
+	margin:auto;
+}
+
+/* ------------------------------- Cardapio ---------------------------------*/
+
+#blocoCat{
+	background: #FFF;
+	width: 820px;
+	height: 100%;
+	padding: 20px;
+	margin:auto;
+	display:block;
+}
+#cat{
+	width: 380px;
+	height: 200px;
+	margin: 15px;
+	background-color:#CCC;
+	float: left;
+	}
+#imgCat{
+	width: 360px;
+	height: 140px;
+	margin: 10px;
+	background-color: #0FF;
+}   
+#nomeCat{
+	height: 40px;
+	background-color: #096;
+}
+
+/* ------------------------------- Produto ---------------------------------*/
+
+#blocoProd{
+	background: #FFF;
+	width: 820px;
+	height: 100%;
+	padding: 20px;
+	margin:auto;
+	display:block;
+}
+#nomeCatProd{
+	width: 200px;
+	height: 30px;
+	padding: 0px 0px 0px 15px;
+	background-color:#300;
+	color:#FFF;
+	float: left;
+	}
+	
+#produto{
+	width: 750px;
+	margin: 0px 0px 20px 15px;
+	height: 250px;
+	margin: 10px;
+	background-color: #0FF;
+	float:left;
+}   
+	
+#imgProd{
+	width: 300px;
+	height: 230px;
+	margin: 10px;
+	background-color: #FFF;
+	float:left;
+}  
+
+#dadosProduto{
+	width: 420px;
+	background-color: #58D;
+	float:left;
+}  
+
+#tituloProduto{
+	width: 420px;
+	height: 30px;
+	background-color: #DDD;
+	float:left;
+} 
+
+#descProduto{
+	width: 420px;
+	background-color: #F8a;
+	float:left;
+} 
+
+#valorProduto{
+	width: 150px;
+	height: 30px;
+	background-color: #FAa;
+	float:left;
+} 
+
+#addBandeja{
+	width: 270px;
+	height: 30px;
+	background-color: #2Aa;
+	float:left;
+}
+
+#nomeCat{
+	height: 40px;
+	background-color: #096;
+}
+
+/* ------------------------------- Carrinho ---------------------------------*/
+
+
+
+/* ------------------------------- Footer ---------------------------------*/
+
+#clearFooter /* Responsável por arrumar a distância da próxima div*/{
+	width: 1040px;
+	height: 20px;
+	margin: auto;
+}
+
+
+
+
+
+
+
+

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="update-libs" default="engine" basedir=".">
+	
+	<target name="engine">
+		<echo>Removendo deploy/engine</echo>
+		<delete dir="../../deploy/engine_full" />
+		<echo>Criando ../../deploy/engine_full</echo>
+		<mkdir dir="../../deploy/engine_full"/>
+		<echo>Copiando versao do workspace</echo>
+		<copy todir="${basedir}/../../deploy/engine_full">
+			<fileset dir="${basedir}/../engine02_src/"/>
+		</copy>
+		<echo>Limpando informacoes sobre repositorio</echo>
+		<delete includeemptydirs="true">
+			<fileset dir="${basedir}/../../deploy/engine_full" includes="**/CVS" defaultexcludes="false"/>
+			<fileset dir="${basedir}/../../deploy/engine_full/.cache" defaultexcludes="false"/>
+			<fileset dir="${basedir}/../../deploy/engine_full/.settings" defaultexcludes="false"/>
+		</delete>
+		<echo>Removendo arquivos desnecessarios</echo>
+		<delete includeemptydirs="true">
+			<fileset dir="${basedir}/../../deploy/engine_full/tests" defaultexcludes="false"/>
+		</delete>
+		<delete file="${basedir}/../../deploy/engine_full/.project"/>
+		<delete file="${basedir}/../../deploy/engine_full/.buildpath"/>
+		<delete file="${basedir}/../../deploy/engine_full/deploy_engine.db.ant"/>
+		<delete file="${basedir}/../../deploy/engine_full/deploy_engine.ant"/>
+		<echo>Copiando a documentação</echo>
+		<mkdir dir="../../deploy/engine/docs"/>
+		<copy file="${basedir}/../engine02_devel/documentacao/engine.db.pdf" todir="${basedir}/../../deploy/engine_full/docs" />
+	</target>
+</project>
